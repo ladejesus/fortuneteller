@@ -16,7 +16,7 @@ namespace FortuneTeller
             int age = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("What is your birth month?");
-            int birthmonth = Convert.ToInt32(Console.ReadLine();
+            int birthmonth = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("what is your favorite ROYGBIV color? Type 'help' for color list");
 
@@ -30,8 +30,8 @@ namespace FortuneTeller
             Console.WriteLine("How many siblings do you have?");
             int siblings = Convert.ToInt16(Console.ReadLine());
 
-     //Conditon for Age Results
-
+            //Conditon for Age Results
+            int retireYears;
             if (age >= 55)
             {
                 retireYears = 10;
@@ -45,79 +45,79 @@ namespace FortuneTeller
             }
 
             //Condition for Sibling Results
-
+            string location;
             if (siblings == 0)
             {
-                location = San Juan; }
+                location = "San Juan"; }
 
             else
 
             if (siblings == 1)
             {
-                location = West Palm;
+                location = "West Palm";
             }
             
             else 
             
             if (siblings == 2)
             {
-                location = king, Georgia;
+                location = "king, Georgia";
             }
                 
-            else 
+           
             
-            if (siblings >= 3)
+            else 
             {
-                location = East Cleveland;
+                location = "East Cleveland";
             }
-                
-            //Condition for Color Results
 
-           if (color == Red)
+            //Condition for Color Results
+            string modeOfTransportation;
+           if (color == "Red")
             {
-                modeOfTransportation = Maserati;
+                modeOfTransportation = "Maserati";
             }
                                      
            else 
            
-           if (color == Orange)
+           if (color == "Orange")
             {
-                modeOfTransportation = Stallion;
+                modeOfTransportation = "Stallion";
             }
 
            else
             
-            if (color == Yellow)
+            if (color == "Yellow")
             {
-                modeOfTransportation = Chariot;
+                modeOfTransportation = "Chariot";
             }
 
             else
             
-            if (color == Green)
+            if (color == "Green")
             {
-                modeOfTransportation = Taxi;
+                modeOfTransportation = "Taxi";
             }
 
             else
             
-            if (color == Blue)
+            if (color == "Blue")
             {
-                modeOfTransportation = Rickshaw;
+                modeOfTransportation = "Rickshaw";
             }
 
             else 
             
-            if (color == Indigo)
+            if (color == "Indigo")
             {
-                modeOfTransportation = Scooter;
+                modeOfTransportation = "Scooter";
             }
 
             else
 
-            if (color == Violet)
+            if (color == "Violet")
             {
-                modeOfTransportation = Flying Saucer;
+                modeOfTransportation = "Flying Saucer";
                             }
         
             //Condition for Birth Month results
