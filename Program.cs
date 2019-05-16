@@ -149,7 +149,7 @@ namespace FortuneTeller
            //User's Fortune results
 
             Console.Write(firstname  +  " "  +  lastname + " ");
-            Console.Write("Will retire in "  +  retireYears + ".\n" );
+            Console.Write("Will retire in "  +  retireYears + "yrs.\n" );
             Console.Write("In the bank "  +  bankBalance + ".\n");
             Console.Write("A vacation home in "  +  location + ".\n");
             Console.Write("Travel mode by "  +  modeOfTransportation + ".\n");
