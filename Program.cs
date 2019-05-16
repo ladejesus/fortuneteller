@@ -31,7 +31,7 @@ namespace FortuneTeller
             int siblings = Convert.ToInt16(Console.ReadLine());
 
             //Conditon for Age Results
-            int retireYears;
+            int retireYears = 0;
             if (age >= 55)
             {
                 retireYears = 10;
@@ -39,9 +39,9 @@ namespace FortuneTeller
 
             else 
 
-            if (age < 55)
+            if (age <= 55)
             {
-                retireYears = 20;
+                retireYears = 20 ;
             }
 
             //Condition for Sibling Results
@@ -54,7 +54,7 @@ namespace FortuneTeller
 
             if (siblings == 1)
             {
-                location = "West Palm";
+                location = "West Palm ";
             }
             
             else 
@@ -72,87 +72,90 @@ namespace FortuneTeller
             }
 
             //Condition for Color Results
-            string modeOfTransportation;
-           if (color == "Red")
+            string modeOfTransportation ="";
+            switch (color)
             {
-                modeOfTransportation = "Maserati";
-            }
-                                     
-           else 
-           
-           if (color == "Orange")
-            {
-                modeOfTransportation = "Stallion";
-            }
+                case "Red":
 
-           else
-            
-            if (color == "Yellow")
-            {
-                modeOfTransportation = "Chariot";
-            }
+                    modeOfTransportation = "Maserati ";
+                    break;
 
-            else
-            
-            if (color == "Green")
-            {
-                modeOfTransportation = "Taxi";
-            }
 
-            else
-            
-            if (color == "Blue")
-            {
-                modeOfTransportation = "Rickshaw";
-            }
 
-            else 
-            
-            if (color == "Indigo")
-            {
-                modeOfTransportation = "Scooter";
-            }
+                case "Orange":
 
-            else
+                    modeOfTransportation = "Stallion";
+                    break;
 
-            if (color == "Violet")
-            {
-                modeOfTransportation = "Flying Saucer";
-                            }
-        
+
+
+                case "Yellow":
+
+                    modeOfTransportation = "Chariot";
+                    break;
+
+
+
+                case "Green":
+
+                    modeOfTransportation = "Taxi";
+                    break;
+
+
+
+                case "Blue":
+
+                    modeOfTransportation = "Rickshaw";
+                    break;
+
+
+
+                case "Indigo":
+
+                    modeOfTransportation = "Scooter";
+                    break;
+
+
+
+                case "Violet":
+
+                    modeOfTransportation = "Flying Saucer";
+                    break;
+            }        
             //Condition for Birth Month results
-
+            string bankBalance;
             if (birthmonth >= 0 && birthmonth <= 4)
             {
-                bankBalance = 256000.76;
+                bankBalance = "256000.76";
             }
 
             else
 
             if (birthmonth >= 8 && birthmonth <= 5)
             {
-                bankBalance = 3687105.42;
+                bankBalance = "3687105.42";
             }
 
             else
 
             if (birthmonth >= 9 && birthmonth <= 12)
             {
-                bankBalance = 86.23;
+                bankBalance = "86.23";
             }
 
             else
-                bankBalance = 0.00;
+                bankBalance = "0.00";
 
            //User's Fortune results
 
-            Console.Write(firstname + " " + lastname + " ");
-            Console.Write("Will retire in" + retireYears);
-            Console.Write(bankBalance);
-            Console.Write("A vacation home in" + location);
-            Console.Write("Travel mode by" + modeOfTransportation);
-            Console.Write();
+            Console.Write(firstname  +  " "  +  lastname + " ");
+            Console.Write("Will retire in "  +  retireYears );
+            Console.Write("In the bank "  +  bankBalance );
+            Console.Write("A vacation home in "  +  location );
+            Console.Write("Travel mode by "  +  modeOfTransportation );
+            Console.Write("Press any key to continue.");
             Console.ReadKey();
+            
             
         }
     }
