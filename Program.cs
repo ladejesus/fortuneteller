@@ -16,7 +16,7 @@ namespace FortuneTeller
             int age = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("What is your birth month?");
-            string  birthmonth = Console.ReadLine();
+            int birthmonth = Convert.ToInt32(Console.ReadLine();
 
             Console.WriteLine("what is your favorite ROYGBIV color? Type 'help' for color list");
 
@@ -32,73 +32,128 @@ namespace FortuneTeller
 
      //Conditon for Age Results
 
-            if (age >= 55) {
-                Console.WriteLine("Not long now");
+            if (age >= 55)
+            {
+                retireYears = 10;
             }
 
-            else if (age < 55) {
-                Console.WriteLine("Keep Working!!");
+            else 
+
+            if (age < 55)
+            {
+                retireYears = 20;
             }
 
-     //Condition for Sibling Results
+            //Condition for Sibling Results
+
             if (siblings == 0)
-                Console.WriteLine("San Juan, Puerto Rico");
+            {
+                location = San Juan; }
 
-            else if (siblings == 1)
-                Console.WriteLine("West palm, Florida");
+            else
 
-            else if (siblings == 2)
-                Console.WriteLine("King, Georgia");
-
-            else if (siblings >= 3)
-                Console.WriteLine("East Cleveland, Ohio");
-
+            if (siblings == 1)
+            {
+                location = West Palm;
+            }
+            
+            else 
+            
+            if (siblings == 2)
+            {
+                location = king, Georgia;
+            }
+                
+            else 
+            
+            if (siblings >= 3)
+            {
+                location = East Cleveland;
+            }
+                
             //Condition for Color Results
 
-            string Red = null;
-            if (color == Red)
-                Console.WriteLine("Maserati");
+           if (color == Red)
+            {
+                modeOfTransportation = Maserati;
+            }
+                                     
+           else 
+           
+           if (color == Orange)
+            {
+                modeOfTransportation = Stallion;
+            }
 
-            string Orange = null;
-            if (color == Orange)
-                Console.WriteLine("Stallion");
-
-            string Yellow = null;
+           else
+            
             if (color == Yellow)
-                Console.WriteLine("Chariot");
+            {
+                modeOfTransportation = Chariot;
+            }
 
-            string Green = null;
+            else
+            
             if (color == Green)
-                Console.WriteLine("Taxi");
+            {
+                modeOfTransportation = Taxi;
+            }
 
-            string Blue = null;
+            else
+            
             if (color == Blue)
-                Console.WriteLine("Rickshaw");
+            {
+                modeOfTransportation = Rickshaw;
+            }
 
-            string Indigo = null;
+            else 
+            
             if (color == Indigo)
-                Console.WriteLine("Scooter");
+            {
+                modeOfTransportation = Scooter;
+            }
 
-            string Violet = null;
+            else
+
             if (color == Violet)
-                Console.WriteLine("Flying Saucer");
-
+            {
+                modeOfTransportation = Flying Saucer;
+                            }
+        
             //Condition for Birth Month results
 
-            if (birthmonth = 12)
-                Console.WriteLine("\256,000.76");
+            if (birthmonth >= 0 && birthmonth <= 4)
+            {
+                bankBalance = 256000.76;
+            }
 
-            if(birthmonth )
+            else
 
+            if (birthmonth >= 8 && birthmonth <= 5)
+            {
+                bankBalance = 3687105.42;
+            }
 
+            else
 
+            if (birthmonth >= 9 && birthmonth <= 12)
+            {
+                bankBalance = 86.23;
+            }
 
-                        //User's Fortune results
-            Console.WriteLine("firstname");
-            Console.WriteLine("lastname");
-            Console.WriteLine(years)
-            Console.WriteLine(bankbalance)
+            else
+                bankBalance = 0.00;
+
+           //User's Fortune results
+
+            Console.Write(firstname + " " + lastname + " ");
+            Console.Write("Will retire in" + retireYears);
+            Console.Write(bankBalance);
+            Console.Write("A vacation home in" + location);
+            Console.Write("Travel mode by" + modeOfTransportation);
+            Console.Write();
+            Console.ReadKey();
             
-                }
+        }
     }
 }
